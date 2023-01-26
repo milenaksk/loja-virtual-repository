@@ -1,3 +1,7 @@
+package br.com.alura.jdbc;
+
+import br.com.alura.jdbc.ConnectionFactory;
+
 import java.sql.*;
 
 public class TestaInsercaoComParametro {
