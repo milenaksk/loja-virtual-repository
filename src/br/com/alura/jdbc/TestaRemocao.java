@@ -1,7 +1,5 @@
 package br.com.alura.jdbc;
 
-import br.com.alura.jdbc.ConnectionFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -14,7 +12,6 @@ public class TestaRemocao {
 
         PreparedStatement stm = connection.prepareStatement("DELETE FROM PRODUTO WHERE ID > 2");
         stm.execute();
-
 
         int linhasModificadas = stm.getUpdateCount();
 
